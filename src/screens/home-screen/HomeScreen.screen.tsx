@@ -1,13 +1,14 @@
 import React from 'react';
 import {
   StyledHomeScreenContainer,
-  StyledBackground,
+  StyledSearchBar,
 } from './HomeScreen.styles';
 import { ImageBackground, StyleSheet } from 'react-native';
 
 export const HomeScreen = () => {
   return (
     <StyledHomeScreenContainer>
+      <StyledSearchBar />
       <ImageBackground
         style={styles.image}
         source={require('../../../assets/images/wallpaper.jpg')}
@@ -19,6 +20,6 @@ export const HomeScreen = () => {
 const styles = StyleSheet.create({
   image: {
     resizeMode: 'cover',
-    height: '70%',
+    height: '85%',
   },
 });
