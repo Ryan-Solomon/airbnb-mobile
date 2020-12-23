@@ -7,6 +7,7 @@ import {
 } from './HomeScreen.styles';
 import { ImageBackground, StyleSheet } from 'react-native';
 import { StyledTextComponent } from './../../style-components/StyledText';
+import { StyledButtonComponent } from '../../style-components/StyledButton';
 
 export const HomeScreen = () => {
   return (
@@ -22,6 +23,7 @@ export const HomeScreen = () => {
             fontSize='54px'
             textAlign='left'
             textShadow='2px 2px 20px black'
+            margin='0 0 -12px 0'
           >
             Go
           </StyledTextComponent>
@@ -33,6 +35,14 @@ export const HomeScreen = () => {
           >
             Near
           </StyledTextComponent>
+          <StyledButtonComponent
+            padding='12px 0px'
+            margin='20px 0px 0px 0px'
+            backgroundColor='white'
+            width='55%'
+          >
+            <StyledTextComponent>Explore nearby stays</StyledTextComponent>
+          </StyledButtonComponent>
         </StyledContent>
       </ImageBackground>
     </StyledHomeScreenContainer>
