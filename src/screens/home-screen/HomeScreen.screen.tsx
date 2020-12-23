@@ -2,17 +2,23 @@ import React from 'react';
 import {
   StyledHomeScreenContainer,
   StyledSearchBar,
+  StyledHeroTitle,
+  StyledContent,
 } from './HomeScreen.styles';
 import { ImageBackground, StyleSheet } from 'react-native';
 
 export const HomeScreen = () => {
   return (
     <StyledHomeScreenContainer>
-      <StyledSearchBar />
       <ImageBackground
         style={styles.image}
         source={require('../../../assets/images/wallpaper.jpg')}
-      />
+      >
+        <StyledSearchBar placeholder='Where are you going?' />
+        <StyledContent>
+          <StyledHeroTitle>Go Near</StyledHeroTitle>
+        </StyledContent>
+      </ImageBackground>
     </StyledHomeScreenContainer>
   );
 };
