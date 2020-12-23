@@ -1,3 +1,4 @@
+import React from 'react';
 import { FC } from 'react';
 import styled from 'styled-components/native';
 
@@ -20,6 +21,7 @@ export const StyledTextComponent: FC<Partial<StyledTextProps>> = ({
   fontSize = '16px',
   textAlign = 'center',
   margin = '0px',
+  children,
 }) => {
   return (
     <StyledText
@@ -27,6 +29,8 @@ export const StyledTextComponent: FC<Partial<StyledTextProps>> = ({
       fontSize={fontSize}
       textAlign={textAlign}
       margin={margin}
-    />
+    >
+      {children}
+    </StyledText>
   );
 };
