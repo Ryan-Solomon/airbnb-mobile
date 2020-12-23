@@ -17,7 +17,22 @@ export const HomeScreen = () => {
       >
         <StyledSearchBar placeholder='Where are you going?' />
         <StyledContent>
-          <StyledTextComponent>Go Near</StyledTextComponent>
+          <StyledTextComponent
+            textColor='white'
+            fontSize='54px'
+            textAlign='left'
+            textShadow='2px 2px 20px black'
+          >
+            Go
+          </StyledTextComponent>
+          <StyledTextComponent
+            textColor='white'
+            fontSize='54px'
+            textAlign='left'
+            textShadow='2px 2px 20px black'
+          >
+            Near
+          </StyledTextComponent>
         </StyledContent>
       </ImageBackground>
     </StyledHomeScreenContainer>

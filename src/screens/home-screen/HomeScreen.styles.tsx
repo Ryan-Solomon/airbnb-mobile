@@ -22,7 +22,10 @@ export const StyledHeroTitle = styled.Text`
 `;
 
 export const StyledContent = styled.View`
-  background-color: #333;
+  /* background-color: #333; */
+  flex: 1;
+  justify-content: center;
+  margin-left: 25px;
 `;
 
 export const StyledExploreButton = styled.TouchableOpacity``;
