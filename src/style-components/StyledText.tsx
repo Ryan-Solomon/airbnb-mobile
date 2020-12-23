@@ -15,7 +15,7 @@ const StyledText = styled.Text<StyledTextProps>`
   margin: ${({ margin }) => margin};
 `;
 
-export const StyledTextComponent: FC<StyledTextProps> = ({
+export const StyledTextComponent: FC<Partial<StyledTextProps>> = ({
   textColor = 'black',
   fontSize = '16px',
   textAlign = 'center',

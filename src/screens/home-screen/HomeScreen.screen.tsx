@@ -6,6 +6,7 @@ import {
   StyledContent,
 } from './HomeScreen.styles';
 import { ImageBackground, StyleSheet } from 'react-native';
+import { StyledTextComponent } from './../../style-components/StyledText';
 
 export const HomeScreen = () => {
   return (
@@ -16,7 +17,7 @@ export const HomeScreen = () => {
       >
         <StyledSearchBar placeholder='Where are you going?' />
         <StyledContent>
-          <StyledHeroTitle>Go Near</StyledHeroTitle>
+          <StyledTextComponent>Go Near</StyledTextComponent>
         </StyledContent>
       </ImageBackground>
     </StyledHomeScreenContainer>
